@@ -15,15 +15,20 @@
       "id": "haz-factura",
       "title": "Haz Factura",
       "subtitle": "SaaS de Facturación Profesional",
-      "description": "Plataforma de alto rendimiento para gestión fiscal. Desarrollo del motor de timbrado, generación de XML/PDF y panel administrativo en tiempo real.",
+      "description": "Plataforma de alto rendimiento para gestión fiscal. Desarrollo del motor de timbrado integrado con Facturapi, generación de XML/PDF y panel administrativo en tiempo real.",
       "link": "https://hazfactura.com/",
-      "images": ["/projects/hazfactura.png", "/projects/hazfactura_mobile.png"],
+      "images": [
+        "/projects/hazfactura_1.png", 
+        "/projects/hazfactura_2.png",
+        "/projects/hazfactura_3.png",
+        "/projects/hazfactura_4.png"
+      ],
       "accentColor": "#FF6600",
-      "tags": ["Node.js", "Express", "React", "TypeScript", "MySQL"],
+      "tags": ["React.js", "Node.js", "MongoDB", "Facturapi", "SaaS"],
       "technicalSpecs": {
-        "architecture": "Microservicios (API-first)",
-        "database": "MySQL (Consultas Optimizadas)",
-        "features": ["Generación XML 4.0", "Panel de Analíticas", "Multi-usuario"]
+        "architecture": "MERN Stack + Facturapi Integration",
+        "database": "MongoDB Atlas",
+        "features": ["Motor de Timbrado (Facturapi)", "Gestión Masiva de XML 4.0", "Panel de Analíticas Fiscales"]
       },
       "priority": 1,
       "featured": true
@@ -34,7 +39,12 @@
       "subtitle": "App de Escaneo de Calorías con IA",
       "description": "App móvil que utiliza visión artificial para el rastreo nutricional. Fuerte enfoque en optimización de latencia de red y UX móvil.",
       "link": "https://app.macrolife.app/",
-      "images": ["/projects/macrolife.png"],
+      "images": [
+        "/projects/macrolife_1.png",
+        "/projects/macrolife_2.png",
+        "/projects/macrolife_3.png",
+        "/projects/macrolife_4.png"
+      ],
       "accentColor": "#000000",
       "tags": ["Flutter", "Dart", "AI/CV", "Firebase", "Mobile"],
       "technicalSpecs": {
@@ -51,7 +61,12 @@
       "subtitle": "Gestión de Casos Legales",
       "description": "Sistema integral para la automatización de bufetes jurídicos. Digitalización de expedientes y seguimiento automatizado de audiencias.",
       "link": "https://iusform.com",
-      "images": ["/projects/iusform.png"],
+      "images": [
+        "/projects/iusform_1.png",
+        "/projects/iusform_2.png",
+        "/projects/iusform_3.png",
+        "/projects/iusform_4.png"
+      ],
       "accentColor": "#D4AF37",
       "tags": ["React.js", "Node.js", "MongoDB", "Shadcn/UI"],
       "technicalSpecs": {
@@ -68,7 +83,12 @@
       "subtitle": "Gestión de Clínica Dental",
       "description": "Sistema de gestión clínica con enfoque en la experiencia del paciente. Visualización 3D de piezas dentales y gestión de cobros.",
       "link": "https://dentista-sistema.vercel.app/",
-      "images": ["/projects/dentista.png"],
+      "images": [
+        "/projects/dentista_1.png",
+        "/projects/dentista_2.png",
+        "/projects/dentista_3.png",
+        "/projects/dentista_4.png"
+      ],
       "accentColor": "#7C3AED",
       "tags": ["Next.js", "Tailwind CSS", "MongoDB", "Framer Motion"],
       "technicalSpecs": {
