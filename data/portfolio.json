@@ -1,0 +1,155 @@
+{
+  "personalInfo": {
+    "name": "JESÚS ANTONIO MENA DE LA ROSA",
+    "role": "DESARROLLADOR FULL STACK",
+    "headline": "Ingeniería de Software & Arquitectura de Productos",
+    "tagline": "Especializado en crear ecosistemas digitales escalables. Desde aplicaciones móviles con Flutter hasta backends robustos con Node.js y bases de datos NoSQL/SQL.",
+    "email": "jesus.mena.dev@gmail.com",
+    "phones": ["(565) 990 92 46", "(222) 636 02 87"],
+    "github": "https://github.com/mcmenamc",
+    "website": "https://mena-portafolio.netlify.app",
+    "address": "Puebla, Pue., México"
+  },
+  "projects": [
+    {
+      "id": "haz-factura",
+      "title": "Haz Factura",
+      "subtitle": "SaaS de Facturación Profesional",
+      "description": "Plataforma de alto rendimiento para gestión fiscal. Desarrollo del motor de timbrado, generación de XML/PDF y panel administrativo en tiempo real.",
+      "link": "https://hazfactura.com/",
+      "images": ["/projects/hazfactura.png", "/projects/hazfactura_mobile.png"],
+      "accentColor": "#FF6600",
+      "tags": ["Node.js", "Express", "React", "TypeScript", "MySQL"],
+      "technicalSpecs": {
+        "architecture": "Microservicios (API-first)",
+        "database": "MySQL (Consultas Optimizadas)",
+        "features": ["Generación XML 4.0", "Panel de Analíticas", "Multi-usuario"]
+      },
+      "priority": 1,
+      "featured": true
+    },
+    {
+      "id": "macrolife",
+      "title": "MacroLife",
+      "subtitle": "App de Escaneo de Calorías con IA",
+      "description": "App móvil que utiliza visión artificial para el rastreo nutricional. Fuerte enfoque en optimización de latencia de red y UX móvil.",
+      "link": "https://app.macrolife.app/",
+      "images": ["/projects/macrolife.png"],
+      "accentColor": "#000000",
+      "tags": ["Flutter", "Dart", "AI/CV", "Firebase", "Mobile"],
+      "technicalSpecs": {
+        "architecture": "Patrón BloC (Flutter)",
+        "database": "Firebase Firestore",
+        "features": ["Escaneo en tiempo real", "Integración HealthKit", "Almacenamiento Offline"]
+      },
+      "priority": 2,
+      "featured": true
+    },
+    {
+      "id": "iusform",
+      "title": "IusForm",
+      "subtitle": "Gestión de Casos Legales",
+      "description": "Sistema integral para la automatización de bufetes jurídicos. Digitalización de expedientes y seguimiento automatizado de audiencias.",
+      "link": "https://iusform.com",
+      "images": ["/projects/iusform.png"],
+      "accentColor": "#D4AF37",
+      "tags": ["React.js", "Node.js", "MongoDB", "Shadcn/UI"],
+      "technicalSpecs": {
+        "architecture": "MERN Stack",
+        "database": "MongoDB (GridFS para docs)",
+        "features": ["Gestión de Expedientes", "Calendario de Audiencias", "Control de Roles"]
+      },
+      "priority": 3,
+      "featured": true
+    },
+    {
+      "id": "dentista-sistema",
+      "title": "Santa Apolonia",
+      "subtitle": "Gestión de Clínica Dental",
+      "description": "Sistema de gestión clínica con enfoque en la experiencia del paciente. Visualización 3D de piezas dentales y gestión de cobros.",
+      "link": "https://dentista-sistema.vercel.app/",
+      "images": ["/projects/dentista.png"],
+      "accentColor": "#7C3AED",
+      "tags": ["Next.js", "Tailwind CSS", "MongoDB", "Framer Motion"],
+      "technicalSpecs": {
+        "architecture": "Server Actions (Next.js 14+)",
+        "database": "MongoDB Atlas",
+        "features": ["Odontograma Interactivo", "Agenda Médica", "Facturación de Consultas"]
+      },
+      "priority": 4,
+      "featured": true
+    }
+  ],
+  "experience": [
+    {
+      "role": "Desarrollador Full Stack Independiente",
+      "company": "Freelance",
+      "period": "Enero 2025 - Presente",
+      "responsibilities": [
+        "Desarrollo y mantenimiento de plataformas SaaS como Haz Factura e IusForm.",
+        "Liderar la arquitectura técnica de soluciones móviles AI para salud (MacroLife).",
+        "Optimización de procesos de bases de datos NoSQL y SQL para clientes privados.",
+        "Consultoría en transformación digital para clínicas especializadas."
+      ],
+      "isCurrent": true
+    },
+    {
+      "role": "Programador Full Stack",
+      "company": "Posibilidades Software Progresivo",
+      "period": "2022 - 2024",
+      "responsibilities": [
+        "Diseñar, desarrollar y mantener aplicaciones móviles y web corporativas.",
+        "Modelar y administrar bases de datos MySQL, asegurando integridad.",
+        "Implementar soluciones en la nube con AWS S3 y Firebase.",
+        "Publicar y mantener aplicaciones en App Store y Google Play."
+      ]
+    },
+    {
+      "role": "Programador Full Stack",
+      "company": "Lerco",
+      "period": "2024 - 2025",
+      "responsibilities": [
+        "Diseño y desarrollo de plataforma de cursos en línea.",
+        "Soporte técnico y mantenimiento de sistemas existentes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica de Puebla",
+      "degree": "Ingeniería en Desarrollo y Gestión de Software",
+      "period": "2019 - 2023"
+    },
+    {
+      "institution": "Universidad Tecnológica de Puebla",
+      "degree": "T.S.U. en TI (Desarrollo Multiplataforma)",
+      "period": "2019 - 2021"
+    }
+  ],
+  "techStack": [
+    { 
+      "name": "Desarrollo Móvil", 
+      "items": ["Android (Android Studio, Play Console)", "iOS (Xcode, App Store Connect)", "Flutter (Dart)"] 
+    },
+    { 
+      "name": "Frontend", 
+      "items": ["React.js + Next.js", "Vue.js", "Tailwind CSS + shadcn/ui", "Bootstrap 5", "MUI (Material-UI)", "Vuetify (Vue)"] 
+    },
+    { 
+      "name": "Backend", 
+      "items": ["JavaScript (Node.js)", "C# (.NET Core)", "PHP (Laravel, CodeIgniter)", "Python", "RESTful, GraphQL, WebSockets"] 
+    },
+    { 
+      "name": "Bases de Datos", 
+      "items": ["MySQL, PostgreSQL, SQL Server", "MongoDB, Firebase", "Entity Framework, Mongoose"] 
+    },
+    { 
+      "name": "Cloud & DevOps", 
+      "items": ["AWS (EC2, S3, Lambda, CloudFront)", "Firebase (Auth, Push, Firestore)", "Azure (App Services)", "GitHub Actions, Docker"] 
+    },
+    { 
+      "name": "Inteligencia Artificial", 
+      "items": ["OpenAI (GPT) API", "Google Gemini API"] 
+    }
+  ]
+}
