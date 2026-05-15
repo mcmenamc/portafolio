@@ -88,13 +88,13 @@ export default function ContactForm() {
                   <CheckCircle2 size={40} />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-black text-zinc-900">¡Mensaje Enviado!</h3>
+                  <h3 className="text-2xl font-bold text-zinc-900">¡Mensaje Enviado!</h3>
                   <p className="text-zinc-500 text-base font-medium">Te responderé en menos de 24 horas.</p>
                 </div>
                 <Button 
                   onClick={() => setIsSuccess(false)}
                   variant="outline"
-                  className="border-zinc-200 text-zinc-900 hover:bg-zinc-50 rounded-xl px-8 h-12 font-black uppercase tracking-widest text-[9px]"
+                  className="border-zinc-200 text-zinc-900 hover:bg-zinc-50 rounded-xl px-8 h-12 font-bold uppercase tracking-widest text-[9px]"
                 >
                   Enviar otro mensaje
                 </Button>
@@ -103,7 +103,7 @@ export default function ContactForm() {
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-3">
-                    <label className="text-[9px] font-black text-zinc-400 flex items-center gap-2 px-1 uppercase tracking-[0.2em]">
+                    <label className="text-[10px] font-semibold text-zinc-400 flex items-center gap-2 px-1 uppercase tracking-widest">
                       <User size={12} className="text-blue-600" /> Nombre Completo
                     </label>
                     <Input
@@ -112,11 +112,11 @@ export default function ContactForm() {
                       className="bg-zinc-50 border-zinc-100 text-zinc-900 placeholder:text-zinc-300 focus:ring-0 focus:border-blue-600 h-14 rounded-2xl px-6 transition-all font-bold text-base"
                     />
                     {form.formState.errors.name && (
-                      <p className="text-[10px] font-black text-red-500 px-1 uppercase tracking-widest">{form.formState.errors.name.message}</p>
+                      <p className="text-[10px] font-bold text-red-500 px-1 uppercase tracking-widest">{form.formState.errors.name.message}</p>
                     )}
                   </div>
                   <div className="space-y-3">
-                    <label className="text-[9px] font-black text-zinc-400 flex items-center gap-2 px-1 uppercase tracking-[0.2em]">
+                    <label className="text-[10px] font-semibold text-zinc-400 flex items-center gap-2 px-1 uppercase tracking-widest">
                       <Mail size={12} className="text-blue-600" /> Correo Electrónico
                     </label>
                     <Input
@@ -125,13 +125,13 @@ export default function ContactForm() {
                       className="bg-zinc-50 border-zinc-100 text-zinc-900 placeholder:text-zinc-300 focus:ring-0 focus:border-blue-600 h-14 rounded-2xl px-6 transition-all font-bold text-base"
                     />
                     {form.formState.errors.email && (
-                      <p className="text-[10px] font-black text-red-500 px-1 uppercase tracking-widest">{form.formState.errors.email.message}</p>
+                      <p className="text-[10px] font-bold text-red-500 px-1 uppercase tracking-widest">{form.formState.errors.email.message}</p>
                     )}
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <label className="text-[9px] font-black text-zinc-400 flex items-center gap-2 px-1 uppercase tracking-[0.2em]">
+                  <label className="text-[10px] font-semibold text-zinc-400 flex items-center gap-2 px-1 uppercase tracking-widest">
                     <MessageSquare size={12} className="text-blue-600" /> Detalles del Proyecto
                   </label>
                   <Textarea
@@ -140,14 +140,14 @@ export default function ContactForm() {
                     className="bg-zinc-50 border-zinc-100 text-zinc-900 placeholder:text-zinc-300 focus:ring-0 focus:border-blue-600 min-h-[160px] rounded-2xl px-6 py-5 resize-none transition-all font-bold text-base leading-relaxed"
                   />
                   {form.formState.errors.message && (
-                    <p className="text-[10px] font-black text-red-500 px-1 uppercase tracking-widest">{form.formState.errors.message.message}</p>
+                    <p className="text-[10px] font-bold text-red-500 px-1 uppercase tracking-widest">{form.formState.errors.message.message}</p>
                   )}
                 </div>
 
                 <Button
                   disabled={isSubmitting}
                   type="submit"
-                  className="w-full h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl text-lg font-black transition-all flex items-center justify-center gap-3 shadow-xl shadow-blue-600/20 group"
+                  className="w-full h-16 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl text-lg font-bold transition-all flex items-center justify-center gap-3 shadow-xl shadow-blue-600/20 group"
                 >
                   {isSubmitting ? (
                     <div className="h-6 w-6 border-3 border-white/30 border-t-white rounded-full animate-spin" />

@@ -23,7 +23,7 @@ export default function ProjectCard({ project, isFeatured }: { project: any, isF
         {isFeatured && (
           <div className="absolute top-6 left-6 z-20 flex items-center gap-2 px-4 py-2 rounded-2xl bg-white/90 backdrop-blur-md border border-zinc-100 shadow-sm">
             <Star size={14} className="fill-yellow-400 text-yellow-400" />
-            <span className="text-[10px] font-black uppercase tracking-widest text-zinc-900">Proyecto Destacado</span>
+            <span className="text-[10px] font-bold uppercase tracking-widest text-zinc-900">Proyecto Destacado</span>
           </div>
         )}
       </div>
@@ -63,14 +63,14 @@ export default function ProjectCard({ project, isFeatured }: { project: any, isF
                <Layout size={14} />
                <span className="text-[10px] font-bold uppercase tracking-widest">Arquitectura</span>
             </div>
-            <p className="text-xs font-black text-zinc-900">{project.technicalSpecs.architecture}</p>
+            <p className="text-xs font-bold text-zinc-900">{project.technicalSpecs.architecture}</p>
           </div>
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-zinc-400">
                <Database size={14} />
                <span className="text-[10px] font-bold uppercase tracking-widest">Data Stack</span>
             </div>
-            <p className="text-xs font-black text-zinc-900">{project.technicalSpecs.database}</p>
+            <p className="text-xs font-bold text-zinc-900">{project.technicalSpecs.database}</p>
           </div>
         </div>
 

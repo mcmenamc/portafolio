@@ -49,7 +49,7 @@ export default function PortfolioPage() {
              <a href={portfolioData.personalInfo.github} target="_blank" className="text-zinc-400 hover:text-zinc-900 transition-colors">
                 <Github size={20} />
              </a>
-             <a href={`mailto:${portfolioData.personalInfo.email}`} className="px-8 py-3 rounded-2xl bg-zinc-900 text-[11px] font-black uppercase tracking-[0.2em] text-white hover:bg-zinc-800 transition-all shadow-2xl shadow-zinc-200">
+             <a href="#contacto" className="px-8 py-3 rounded-2xl bg-zinc-900 text-[11px] font-bold uppercase tracking-widest text-white hover:bg-zinc-800 transition-all shadow-2xl shadow-zinc-200">
                 Contactar Ahora
              </a>
           </div>

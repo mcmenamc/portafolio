@@ -15,7 +15,7 @@ export default function Experience({ experience, education }: { experience: any[
           {/* Left: Professional Presentation & Experience */}
           <div className="lg:col-span-7 space-y-16">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] tracking-widest uppercase font-black">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] tracking-widest uppercase font-bold">
                 Presentación & Carrera
               </div>
               <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-zinc-900 leading-none">
@@ -44,7 +44,7 @@ export default function Experience({ experience, education }: { experience: any[
                     
                     <div className="space-y-2">
                        {isCurrent && (
-                          <div className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-[0.2em] font-black text-blue-600">
+                          <div className="inline-flex items-center gap-1.5 text-[10px] uppercase tracking-widest font-semibold text-blue-600">
                              <div className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-ping" />
                              Actualidad
                           </div>
@@ -56,7 +56,7 @@ export default function Experience({ experience, education }: { experience: any[
                           {item.period}
                         </span>
                       </div>
-                      <div className="text-blue-600 font-black text-[11px] uppercase tracking-[0.3em]">
+                      <div className="text-blue-600 font-semibold text-[11px] uppercase tracking-widest">
                         {item.company}
                       </div>
                     </div>
@@ -81,7 +81,7 @@ export default function Experience({ experience, education }: { experience: any[
             {/* System Architecture Visualization */}
             <div className="space-y-6">
                <div className="space-y-2">
-                  <h3 className="text-xs font-black text-zinc-400 uppercase tracking-[0.3em] flex items-center gap-2">
+                  <h3 className="text-xs font-semibold text-zinc-400 uppercase tracking-widest flex items-center gap-2">
                      <Layers size={14} className="text-blue-600" /> My Stack Architecture
                   </h3>
                   <p className="text-zinc-400 text-[11px] font-medium leading-relaxed">
@@ -96,8 +96,8 @@ export default function Experience({ experience, education }: { experience: any[
                         <Globe size={20} />
                      </div>
                      <div>
-                        <div className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Interface Layer</div>
-                        <div className="text-sm font-black text-zinc-900">React · Next.js · Flutter</div>
+                        <div className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Interface Layer</div>
+                        <div className="text-sm font-bold text-zinc-900">React · Next.js · Flutter</div>
                      </div>
                   </div>
 
@@ -107,8 +107,8 @@ export default function Experience({ experience, education }: { experience: any[
                         <Cpu size={20} />
                      </div>
                      <div>
-                        <div className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Business Logic</div>
-                        <div className="text-sm font-black text-zinc-900">Node.js · NestJS · Laravel</div>
+                        <div className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Business Logic</div>
+                        <div className="text-sm font-bold text-zinc-900">Node.js · NestJS · Laravel</div>
                      </div>
                   </div>
 
@@ -118,8 +118,8 @@ export default function Experience({ experience, education }: { experience: any[
                         <Database size={20} />
                      </div>
                      <div>
-                        <div className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Infrastructure</div>
-                        <div className="text-sm font-black text-zinc-900">AWS · Redis</div>
+                        <div className="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Infrastructure</div>
+                        <div className="text-sm font-bold text-zinc-900">AWS · Redis</div>
                      </div>
                   </div>
                </div>
@@ -127,7 +127,7 @@ export default function Experience({ experience, education }: { experience: any[
 
             {/* Formación (Smaller / Refined) */}
             <div className="space-y-6 pt-12 border-t border-zinc-100">
-               <h3 className="text-[10px] font-black text-zinc-900 uppercase tracking-[0.3em] flex items-center gap-2">
+               <h3 className="text-[10px] font-semibold text-zinc-900 uppercase tracking-widest flex items-center gap-2">
                   <GraduationCap size={16} className="text-zinc-300" /> Formación Académica
                </h3>
                <div className="space-y-4">
@@ -135,7 +135,7 @@ export default function Experience({ experience, education }: { experience: any[
                      <div key={index} className="flex gap-4">
                         <div className="w-1 h-10 bg-zinc-100 rounded-full flex-shrink-0" />
                         <div>
-                           <div className="text-xs font-black text-zinc-900">{item.degree}</div>
+                           <div className="text-xs font-bold text-zinc-900">{item.degree}</div>
                            <div className="text-[10px] font-bold text-zinc-400 uppercase">{item.institution} · {item.period}</div>
                         </div>
                      </div>
