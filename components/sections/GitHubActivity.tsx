@@ -39,7 +39,7 @@ export default function GitHubActivity({ username }: { username: string }) {
               Actividad Reciente
             </div>
             <h2 className="text-3xl md:text-4xl font-black tracking-tight text-zinc-900 leading-none">
-              Código Open <span className="text-zinc-300">Source</span>
+              Código Open Source
             </h2>
             <p className="text-zinc-500 max-w-lg text-sm font-medium leading-relaxed">
               Mis repositorios más activos, priorizando aquellos con desarrollo constante y despliegue continuo.

@@ -119,7 +119,7 @@ export default function Experience({ experience, education }: { experience: any[
                      </div>
                      <div>
                         <div className="text-[10px] font-black text-zinc-400 uppercase tracking-widest">Infrastructure</div>
-                        <div className="text-sm font-black text-zinc-900">AWS · PostgreSQL · Redis</div>
+                        <div className="text-sm font-black text-zinc-900">AWS · Redis</div>
                      </div>
                   </div>
                </div>

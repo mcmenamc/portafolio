@@ -209,7 +209,6 @@
     ],
     "cloud_database": [
       "AWS (S3, EC2, Lambda)",
-      "PostgreSQL",
       "MongoDB",
       "Firebase",
       "Redis",
@@ -221,9 +220,7 @@
       "CI/CD (GitHub Actions)",
       "Clean Architecture (BLoC)",
       "Principios SOLID",
-      "Unit Testing",
-      "Git Flow",
-      "TDD"
+      "Unit Testing"
     ]
   }
 }
