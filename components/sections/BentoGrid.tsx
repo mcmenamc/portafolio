@@ -7,7 +7,7 @@ export default function BentoGrid({ projects }: { projects: any[] }) {
   const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority);
 
   return (
-    <section id="work" className="py-32 bg-white">
+    <section id="proyectos" className="py-32 bg-white">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <div className="max-w-3xl mb-24">

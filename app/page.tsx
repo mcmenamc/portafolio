@@ -19,9 +19,9 @@ export default function PortfolioPage() {
   }, [])
 
   const navLinks = [
-    { href: "#work", label: "Proyectos" },
-    { href: "#experience", label: "Arquitectura" },
-    { href: "#contact", label: "Contacto" },
+    { href: "#proyectos", label: "Proyectos" },
+    { href: "#experiencia", label: "Experiencia" },
+    { href: "#contacto", label: "Contacto" },
   ]
 
   return (
@@ -151,7 +151,7 @@ export default function PortfolioPage() {
             <div className="flex justify-center gap-8 text-xs font-bold uppercase tracking-widest text-zinc-400">
                <a href={portfolioData.personalInfo.github} target="_blank" className="hover:text-white transition-colors">GitHub</a>
                <a href={portfolioData.personalInfo.linkedin} target="_blank" className="hover:text-white transition-colors">LinkedIn</a>
-               <a href={`mailto:${portfolioData.personalInfo.email}`} className="hover:text-white transition-colors">Email</a>
+               <a href={`mailto:${portfolioData.personalInfo.email}`} className="hover:text-white transition-colors">Correo</a>
             </div>
           </div>
           

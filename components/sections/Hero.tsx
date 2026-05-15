@@ -1,139 +1,149 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Code2, Sparkles, Terminal } from "lucide-react"
+import { ArrowRight, Code2, Terminal, Sparkles } from "lucide-react"
 
 export default function Hero({ data }: { data: any }) {
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-white">
-      {/* Background Decorative Elements */}
+    <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-gradient-to-b from-blue-50/50 to-white">
+      {/* Background: Refined technical grid with more visibility */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#f4f4f5_1px,transparent_1px),linear-gradient(to_bottom,#f4f4f5_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-60" />
-        <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-blue-500/20 rounded-full blur-[120px] animate-pulse" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-500/10 rounded-full blur-[120px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] opacity-100" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/30 rounded-full blur-[120px] -z-10" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl space-y-10">
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-zinc-50 border border-zinc-100 text-zinc-900 shadow-sm"
-          >
-            <div className="flex -space-x-2">
-              <div className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center border-2 border-white">
-                <Terminal size={12} className="text-white" />
-              </div>
-              <div className="w-6 h-6 rounded-full bg-zinc-900 flex items-center justify-center border-2 border-white">
-                <Code2 size={12} className="text-white" />
-              </div>
-            </div>
-            <span className="text-xs font-black uppercase tracking-[0.2em] ml-2">
-              Ingeniero de Software Full Stack
-            </span>
-          </motion.div>
-
-          {/* Main Title */}
-          <div className="space-y-3">
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }}
+        <div className="max-w-4xl">
+          <div className="space-y-12">
+            
+            {/* Minimalist Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tight text-zinc-900 leading-[1.1] md:leading-[1.05]"
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-zinc-50 border border-zinc-100 text-zinc-900 shadow-sm"
             >
-              Construyendo <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Sistemas</span> de <br />
-              Alto Impacto<span className="text-blue-600">.</span>
-            </motion.h1>
-          </div>
-
-          {/* Description */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-zinc-500 text-sm md:text-base font-medium leading-relaxed max-w-lg"
-          >
-            Especializado en el desarrollo de arquitecturas escalables y optimización de productos digitales. Con 
-            <span className="text-zinc-900 font-bold mx-1">3+ años de experiencia</span> 
-            transformando ideas en soluciones técnicas robustas.
-          </motion.p>
-
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-wrap gap-4 pt-2"
-          >
-            <a
-              href="#work"
-              className="group relative px-6 py-3 bg-zinc-900 text-white rounded-xl font-black text-[10px] uppercase tracking-widest overflow-hidden transition-all hover:bg-zinc-800 shadow-xl shadow-zinc-200"
-            >
-              <span className="relative z-10 flex items-center gap-2">
-                Ver Proyectos
-                <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              <div className="flex -space-x-2">
+                <div className="w-7 h-7 rounded-full bg-blue-600 flex items-center justify-center border-2 border-white">
+                  <Terminal size={12} className="text-white" />
+                </div>
+                <div className="w-7 h-7 rounded-full bg-zinc-900 flex items-center justify-center border-2 border-white">
+                  <Code2 size={12} className="text-white" />
+                </div>
+              </div>
+              <span className="text-[10px] font-black uppercase tracking-[0.25em] ml-1">
+                Ingeniero de Software Full Stack
               </span>
-            </a>
-            <a
-              href="#contact"
-              className="px-6 py-3 bg-white border border-zinc-200 text-zinc-900 rounded-xl font-black text-[10px] uppercase tracking-widest hover:border-zinc-900 transition-all"
-            >
-              Hablemos
-            </a>
-          </motion.div>
+            </motion.div>
 
-          {/* Skills / Tech shortcut */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="pt-12 flex items-center gap-8 grayscale opacity-40 hover:grayscale-0 hover:opacity-100 transition-all"
-          >
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-400">Expertise en</span>
-            <div className="flex gap-8 font-black text-zinc-900 text-sm tracking-tighter">
-              <span>REACT</span>
-              <span>NODE.JS</span>
-              <span>TYPESCRIPT</span>
-              <span>AWS</span>
-              <span>FLUTTER</span>
-              <span>LARAVEL</span>
-              <span>PHP</span>
-              <span>MYSQL</span>
-              <span>MONGODB</span>
+            {/* Huge Editorial Headline */}
+            <div className="space-y-6">
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter text-zinc-900 leading-[0.95] md:leading-[1.05]"
+              >
+                Construyendo <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Sistemas</span> de <br />
+                Alto Impacto<span className="text-blue-600">.</span>
+              </motion.h1>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-zinc-500 text-lg md:text-xl font-medium leading-relaxed max-w-xl"
+              >
+                Especializado en el desarrollo de arquitecturas escalables y optimización de productos digitales. Con 
+                <span className="text-zinc-900 font-black mx-2 underline decoration-blue-600/20 underline-offset-8">3+ años de experiencia</span> 
+                transformando ideas en soluciones robustas.
+              </motion.p>
             </div>
-          </motion.div>
+
+            {/* CTAs */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="flex flex-wrap gap-5"
+            >
+              <a
+                href="#proyectos"
+                className="group relative px-10 py-5 bg-zinc-900 text-white rounded-2xl font-black text-[11px] uppercase tracking-widest overflow-hidden transition-all hover:bg-zinc-800 shadow-2xl shadow-zinc-200"
+              >
+                <span className="relative z-10 flex items-center gap-3">
+                  Ver Proyectos
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </span>
+              </a>
+              <a
+                href="#contacto"
+                className="px-10 py-5 bg-white border border-zinc-200 text-zinc-900 rounded-2xl font-black text-[11px] uppercase tracking-widest hover:border-zinc-900 transition-all shadow-sm"
+              >
+                Hablemos
+              </a>
+            </motion.div>
+
+            {/* Bottom Status / Stats */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              className="pt-16 flex flex-col md:flex-row items-center gap-10 opacity-40 hover:opacity-100 transition-opacity duration-700"
+            >
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-green-500 animate-ping" />
+                <span className="text-[10px] font-black uppercase tracking-widest text-zinc-400">Estado: Disponible para proyectos</span>
+              </div>
+              <div className="hidden md:block w-px h-4 bg-zinc-200" />
+              <div className="flex gap-8 items-center">
+                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-300">Expertise en</span>
+                 <div className="flex gap-6 font-black text-zinc-900 text-[11px] tracking-tighter">
+                   <span>REACT</span>
+                   <span>NODE.JS</span>
+                   <span>AWS</span>
+                   <span>FLUTTER</span>
+                 </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
-      {/* Decorative side element */}
-      <div className="absolute right-[2%] 2xl:right-[10%] top-[20%] hidden xl:block z-0 pointer-events-none">
+      {/* Decorative side element - Floating code snippet or card */}
+      <div className="absolute right-[5%] top-[25%] hidden xl:block pointer-events-none">
         <motion.div
           animate={{
-            y: [0, -20, 0],
-            rotate: [0, 5, 0],
+            y: [0, -15, 0],
           }}
           transition={{
-            duration: 5,
+            duration: 6,
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="relative w-80 h-80 rounded-[60px] border border-zinc-100 bg-zinc-50/50 p-8 flex flex-col justify-between shadow-sm"
+          className="relative w-80 h-96 rounded-[48px] border border-zinc-100 bg-white p-10 flex flex-col justify-between shadow-[0_40px_80px_-20px_rgba(0,0,0,0.04)]"
         >
           <div className="flex justify-between items-start">
-            <div className="p-4 rounded-3xl bg-white shadow-sm">
-               <Sparkles className="text-blue-600" size={32} />
+            <div className="p-4 rounded-2xl bg-zinc-50 text-blue-600">
+               <Sparkles size={24} />
             </div>
-            <div className="text-[10px] font-black uppercase tracking-widest text-zinc-400">Status: Online</div>
+            <div className="text-[9px] font-black uppercase tracking-widest text-zinc-300">System.log</div>
           </div>
           <div className="space-y-4">
+            <div className="space-y-1.5">
+               <div className="h-1.5 w-full bg-zinc-50 rounded-full overflow-hidden">
+                  <div className="h-full w-3/4 bg-blue-600" />
+               </div>
+               <div className="h-1.5 w-full bg-zinc-50 rounded-full overflow-hidden">
+                  <div className="h-full w-1/2 bg-indigo-500" />
+               </div>
+            </div>
             <h4 className="text-2xl font-black text-zinc-900 tracking-tight leading-none">
-              Código Limpio &<br />Escalable
+              Clean Architecture & Performance.
             </h4>
             <p className="text-zinc-500 text-sm font-medium leading-relaxed">
-              Enfoque en performance y mantenibilidad a largo plazo.
+              Enfoque en mantenibilidad y escalabilidad.
             </p>
           </div>
         </motion.div>
