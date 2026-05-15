@@ -5,7 +5,7 @@ import useEmblaCarousel from "embla-carousel-react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
 import Image from "next/image"
 
-export default function ProjectCarousel({ images, title }: { images: string[], title: string }) {
+export default function ProjectCarousel({ images, title, accentColor = "#3B82F6" }: { images: string[], title: string, accentColor?: string }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 30 })
   const [selectedIndex, setSelectedIndex] = useState(0)
 
@@ -22,6 +22,21 @@ export default function ProjectCarousel({ images, title }: { images: string[], t
     onSelect()
     emblaApi.on("select", onSelect)
     emblaApi.on("reInit", onSelect)
+
+    // Autoplay logic
+    const autoplay = setInterval(() => {
+      if (emblaApi.canScrollNext()) {
+        emblaApi.scrollNext()
+      } else {
+        emblaApi.scrollTo(0)
+      }
+    }, 4000)
+
+    return () => {
+      clearInterval(autoplay)
+      emblaApi.off("select", onSelect)
+      emblaApi.off("reInit", onSelect)
+    }
   }, [emblaApi, onSelect])
 
   return (
@@ -62,8 +77,9 @@ export default function ProjectCarousel({ images, title }: { images: string[], t
               <div
                 key={index}
                 className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                  index === selectedIndex ? "bg-blue-500 scale-125 w-4" : "bg-white/20"
+                  index === selectedIndex ? "scale-125 w-4" : "bg-white/20"
                 }`}
+                style={index === selectedIndex ? { backgroundColor: accentColor } : undefined}
               />
             ))}
           </div>

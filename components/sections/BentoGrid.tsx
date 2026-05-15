@@ -7,47 +7,49 @@ export default function BentoGrid({ projects }: { projects: any[] }) {
   const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority);
 
   return (
-    <section id="work" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
-          <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] tracking-widest uppercase">
-              Proyectos de Alto Impacto
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-zinc-900 leading-none">
-              Ingeniería <span className="text-zinc-200">&</span><br/>Arquitectura
+    <section id="work" className="py-32 bg-white">
+      <div className="container mx-auto px-4 max-w-7xl">
+        {/* Header Section */}
+        <div className="max-w-3xl mb-24">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-600">
+              Portfolio de Ingeniería
+            </span>
+            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-zinc-900 leading-[0.95]">
+              Sistemas <span className="text-zinc-200">&</span><br />Productos
             </h2>
-            <p className="text-zinc-500 max-w-lg text-sm font-medium leading-relaxed">
-              Desarrollo de soluciones tecnológicas robustas, desde motores de facturación masiva hasta aplicaciones móviles con visión artificial.
+            <p className="text-zinc-500 text-lg font-medium leading-relaxed max-w-xl">
+              Soluciones escalables diseñadas con precisión técnica y enfoque en el impacto de negocio.
             </p>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
           {sortedProjects.map((project, index) => {
-            const isMain = project.id === 'haz-factura';
-            const isMedium = project.id === 'elearning-platform';
-
+            const isFeatured = project.id === 'haz-factura';
+            
             return (
               <motion.div
                 key={project.id}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.8, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className={`
-                  ${isMain ? 'lg:col-span-4' : ''} 
-                  ${isMedium ? 'lg:col-span-3' : ''}
-                  ${!isMain && !isMedium ? 'lg:col-span-2' : ''}
-                `}
+                className={isFeatured ? "md:col-span-2" : ""}
               >
-                <ProjectCard project={project} />
+                <ProjectCard project={project} isFeatured={isFeatured} />
               </motion.div>
-            )
+            );
           })}
         </div>
       </div>
     </section>
   )
 }
-

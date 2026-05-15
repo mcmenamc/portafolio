@@ -120,9 +120,9 @@ export default function PortfolioPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             {Object.entries(portfolioData.techStack).map(([category, items]) => (
               <div key={category} className="space-y-8">
-                <h3 className="text-zinc-900 font-black text-xs uppercase tracking-[0.2em] flex items-center gap-2">
+                <h3 className="text-zinc-900 font-black text-[10px] uppercase tracking-[0.3em] flex items-center gap-2">
                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600" />
-                   {category}
+                   {category.replace('_', ' ')}
                 </h3>
                 <ul className="flex flex-wrap gap-2 mt-4">
                   {(items as string[]).map((item) => (

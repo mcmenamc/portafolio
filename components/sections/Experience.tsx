@@ -17,7 +17,7 @@ export default function Experience({ experience, education }: { experience: any[
               </div>
               <h2 className="text-3xl font-black tracking-tight text-zinc-900 flex items-center gap-3">
                 <Terminal className="text-blue-600" size={28} />
-                Trayectoria Técnica
+                Experiencia
               </h2>
             </div>
 

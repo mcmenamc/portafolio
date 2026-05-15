@@ -98,13 +98,18 @@ export default function Hero({ data }: { data: any }) {
               <span>NODE.JS</span>
               <span>TYPESCRIPT</span>
               <span>AWS</span>
+              <span>FLUTTER</span>
+              <span>LARAVEL</span>
+              <span>PHP</span>
+              <span>MYSQL</span>
+              <span>MONGODB</span>
             </div>
           </motion.div>
         </div>
       </div>
 
       {/* Decorative side element */}
-      <div className="absolute right-[-5%] top-[20%] hidden xl:block">
+      <div className="absolute right-[2%] 2xl:right-[10%] top-[20%] hidden xl:block z-0 pointer-events-none">
         <motion.div
           animate={{
             y: [0, -20, 0],

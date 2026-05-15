@@ -34,7 +34,7 @@
       "id": "haz-factura",
       "title": "Haz Factura",
       "subtitle": "Software de Facturación Masiva",
-      "description": "Plataforma SaaS diseñada para la emisión masiva de CFDI 4.0. Implementé un motor de procesamiento asíncrono que redujo los tiempos de timbrado en un 60% mediante colas de mensajes y microservicios en Node.js.",
+      "description": "Plataforma SaaS para emisión de CFDI 4.0. Integra conexión directa con el SAT para descargas masivas y sincronización con PAC autorizado. Sistema de procesamiento optimizado de alta disponibilidad.",
       "images": [
         "/projects/hazfactura_new_1.png",
         "/projects/hazfactura_new_2.png",
@@ -49,97 +49,129 @@
       ],
       "tags": [
         "Next.js",
+        "React",
         "Node.js",
-        "PostgreSQL",
-        "AWS",
-        "Redis"
+        "TypeScript",
+        "MongoDB",
+        "AWS EC2",
+        "AWS S3",
+        "Stripe"
       ],
       "link": "https://hazfactura.com",
       "priority": 1,
-      "accentColor": "#2563eb",
+      "accentColor": "#f97316",
       "technicalSpecs": {
-        "architecture": "Microservicios / Serverless",
-        "database": "PostgreSQL / Redis"
+        "architecture": "Serverless & Microservices",
+        "database": "MongoDB / AWS S3"
       }
     },
     {
       "id": "macrolife",
       "title": "Macrolife",
       "subtitle": "App Health & Fitness con IA",
-      "description": "Aplicación móvil multiplataforma que utiliza visión artificial para el conteo de macros. Alcanzó 7,000+ descargas en tiendas oficiales, integrando pasarelas de pago y sincronización en tiempo real.",
+      "description": "Aplicación móvil iOS y Android diseñada para analizar los macronutrientes de los alimentos mediante visión artificial y fomentar un estilo de vida saludable. Incluye sistema de pagos recurrentes.",
       "images": [
         "/projects/macrolife_1.png",
         "/projects/macrolife_2.png"
       ],
       "tags": [
         "Flutter",
-        "Firebase",
+        "iOS",
+        "Android",
         "Computer Vision",
-        "Stripe"
+        "Stripe",
+        "AWS S3"
       ],
-      "link": "https://macrolife.com.mx",
+      "link": "https://app.macrolife.app/",
       "priority": 2,
-      "accentColor": "#10b981",
+      "accentColor": "#09090b",
       "technicalSpecs": {
-        "architecture": "Event-Driven Architecture",
-        "database": "Cloud Firestore"
+        "architecture": "Clean Architecture (BLoC)",
+        "database": "AWS S3 / Cloud"
       }
     },
     {
-      "id": "elearning-platform",
-      "title": "Plataforma E-learning",
-      "subtitle": "Sistema de Gestión de Aprendizaje",
-      "description": "Desarrollo integral de una plataforma educativa con gestión de contenido multimedia, exámenes dinámicos y seguimiento de progreso de usuarios en tiempo real.",
+      "id": "iusform",
+      "title": "Iusform",
+      "subtitle": "Sistema de Administración Legal",
+      "description": "Plataforma administrativa integral para despachos y abogados independientes. Permite la gestión centralizada de expedientes, automatización de documentos y control de clientes en la nube.",
       "images": [
         "/projects/iusform_1.png"
       ],
       "tags": [
-        "React",
-        "Express",
-        "MongoDB",
+        "Laravel",
+        "PHP",
+        "MySQL",
+        "AWS EC2",
         "AWS S3"
       ],
-      "link": "#",
+      "link": "https://iusform.com/",
       "priority": 3,
-      "accentColor": "#6366f1",
+      "accentColor": "#eab308",
       "technicalSpecs": {
         "architecture": "MVC Architecture",
-        "database": "MongoDB / AWS S3"
+        "database": "MySQL / AWS S3"
+      }
+    },
+    {
+      "id": "hank",
+      "title": "Hank",
+      "subtitle": "App de Control Residencial",
+      "description": "Aplicación móvil para administración residencial. Permite control de acceso a fraccionamientos mediante códigos QR, gestión de cobros y cuotas, además del envío y rastreo de invitaciones a visitas.",
+      "images": [
+        "/projects/hank_1.png",
+        "/projects/hank_2.png",
+        "/projects/hank_3.png"
+      ],
+      "tags": [
+        "Flutter",
+        "iOS",
+        "Android",
+        "Laravel API",
+        "PHP",
+        "MySQL"
+      ],
+      "link": "https://hank.mx/",
+      "priority": 4,
+      "accentColor": "#1d4ed8",
+      "technicalSpecs": {
+        "architecture": "Mobile & REST API",
+        "database": "MySQL"
       }
     }
   ],
   "experience": [
     {
       "company": "Freelance",
-      "role": "Senior Full Stack Developer",
+      "role": "Freelance Full Stack Developer",
       "period": "Enero 2026 - Presente",
       "isCurrent": true,
       "responsibilities": [
-        "Liderazgo técnico en el desarrollo de Haz Factura, optimizando la arquitectura para soportar carga masiva.",
-        "Implementación de arquitecturas cloud en AWS para mejorar la escalabilidad y disponibilidad del sistema.",
-        "Consultoría en optimización de rendimiento y seguridad para startups tecnológicas."
+        "Creación, mantenimiento y despliegue de múltiples aplicaciones a la medida para PyMEs.",
+        "Consultoría en escalabilidad, optimización de bases de datos y arquitecturas Cloud (AWS).",
+        "Desarrollo continuo de proyectos web y móviles utilizando tecnologías modernas (React, Node, Flutter)."
       ]
     },
     {
       "company": "Lerco",
       "role": "Full Stack Developer",
-      "period": "Enero 2025 - Presente",
-      "isCurrent": true,
+      "period": "Enero 2025 - Diciembre 2025",
+      "isCurrent": false,
       "responsibilities": [
-        "Desarrollo de plataforma e-learning alcanzando 500+ usuarios activos.",
-        "Integración de servicios de almacenamiento en la nube y procesamiento de video.",
-        "Optimización de consultas en base de datos PostgreSQL."
+        "Desarrollo y soporte técnico enfocado en la plataforma web de cursos en línea.",
+        "Integración de servicios en la nube, optimización de consultas a base de datos y mejoras continuas de UI.",
+        "Mantenimiento general del sistema y apoyo en despliegues a producción."
       ]
     },
     {
-      "company": "MacroLife",
-      "role": "Mobile Developer Lead",
-      "period": "Junio 2022 - Diciembre 2024",
+      "company": "Posbilidades de Software Progresivo",
+      "role": "Full Stack Web & Mobile Developer",
+      "period": "Junio 2022 - Enero 2025",
       "isCurrent": false,
       "responsibilities": [
-        "Lideré el desarrollo de la app móvil con 7K+ descargas.",
-        "Implementé modelos de Computer Vision para reconocimiento de alimentos.",
-        "Arquitectura de sincronización offline-first con Firebase."
+        "Desarrollo integral de la app móvil MacroLife (iOS/Android) con IA y reconocimiento de imagen.",
+        "Arquitectura y construcción de 'Haz Factura', sistema SaaS web para timbrado masivo y conexión con el SAT.",
+        "Lideré el ciclo completo de vida del software, manejando el backend (Node.js/TypeScript) y el frontend móvil y web."
       ]
     }
   ],
@@ -158,25 +190,40 @@
   "techStack": {
     "frontend": [
       "React.js",
-      "Next.js",
       "Flutter",
+      "TypeScript",
       "Tailwind CSS",
-      "TypeScript"
+      "Zustand",
+      "Framer Motion",
+      "TanStack Query"
     ],
     "backend": [
+      "Next.js (SSR/API)",
       "Node.js",
       "Express",
-      "Python",
       "NestJS",
-      "Go"
+      "Laravel (PHP)",
+      "Python",
+      "RESTful APIs",
+      "Microservicios"
     ],
-    "cloud_data": [
-      "AWS",
-      "Firebase",
+    "cloud_database": [
+      "AWS (S3, EC2, Lambda)",
       "PostgreSQL",
       "MongoDB",
+      "Firebase",
       "Redis",
-      "Docker"
+      "Docker",
+      "Facturapi",
+      "Conexión SAT"
+    ],
+    "engineering": [
+      "CI/CD (GitHub Actions)",
+      "Clean Architecture (BLoC)",
+      "Principios SOLID",
+      "Unit Testing",
+      "Git Flow",
+      "TDD"
     ]
   }
 }
