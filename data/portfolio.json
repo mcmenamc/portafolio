@@ -1,175 +1,182 @@
 {
   "personalInfo": {
-    "name": "JESÚS ANTONIO MENA DE LA ROSA",
-    "role": "DESARROLLADOR FULL STACK",
-    "headline": "Ingeniería de Software & Arquitectura de Productos",
-    "tagline": "Especializado en crear ecosistemas digitales escalables. Desde aplicaciones móviles con Flutter hasta backends robustos con Node.js y bases de datos NoSQL/SQL.",
+    "name": "Jesús Antonio Mena de la Rosa",
+    "role": "Full Stack Developer | Especialista en Mobile & Web",
+    "location": "Puebla, México",
     "email": "jesus.mena.dev@gmail.com",
-    "phones": ["(565) 990 92 46", "(222) 636 02 87"],
-    "github": "https://github.com/mcmenamc",
-    "website": "https://mena-portafolio.netlify.app",
-    "address": "Puebla, Pue., México"
+    "whatsapp": "(565) 990-9246",
+    "github": "http://github.com/mcmenamc/",
+    "linkedin": "https://www.linkedin.com/in/jesus-mena-dev",
+    "experience": "3+ años",
+    "tagline": "Ingeniero de software enfocado en la construcción de sistemas escalables y optimización de productos digitales de alto impacto.",
+    "headline": "Construyendo Sistemas de Alto Impacto"
   },
+  "stats": [
+    {
+      "label": "Usuarios Activos",
+      "value": "500+"
+    },
+    {
+      "label": "Descargas App",
+      "value": "7K+"
+    },
+    {
+      "label": "Optimización",
+      "value": "60%"
+    },
+    {
+      "label": "Rating Tiendas",
+      "value": "4.5+"
+    }
+  ],
   "projects": [
     {
       "id": "haz-factura",
       "title": "Haz Factura",
-      "subtitle": "SaaS de Facturación Profesional",
-      "description": "Plataforma de alto rendimiento para gestión fiscal. Desarrollo del motor de timbrado integrado con Facturapi, generación de XML/PDF y panel administrativo en tiempo real.",
-      "link": "https://hazfactura.com/",
+      "subtitle": "Software de Facturación Masiva",
+      "description": "Plataforma SaaS diseñada para la emisión masiva de CFDI 4.0. Implementé un motor de procesamiento asíncrono que redujo los tiempos de timbrado en un 60% mediante colas de mensajes y microservicios en Node.js.",
       "images": [
-        "/projects/hazfactura_1.png", 
-        "/projects/hazfactura_2.png",
-        "/projects/hazfactura_3.png",
-        "/projects/hazfactura_4.png"
+        "/projects/hazfactura_new_1.png",
+        "/projects/hazfactura_new_2.png",
+        "/projects/hazfactura_new_3.png",
+        "/projects/hazfactura_new_4.png",
+        "/projects/hazfactura_new_5.png",
+        "/projects/hazfactura_new_6.png",
+        "/projects/hazfactura_new_7.png",
+        "/projects/hazfactura_new_8.png",
+        "/projects/hazfactura_new_9.png",
+        "/projects/hazfactura_new_10.png"
       ],
-      "accentColor": "#FF6600",
-      "tags": ["React.js", "Node.js", "MongoDB", "Facturapi", "SaaS"],
-      "technicalSpecs": {
-        "architecture": "MERN Stack + Facturapi Integration",
-        "database": "MongoDB Atlas",
-        "features": ["Motor de Timbrado (Facturapi)", "Gestión Masiva de XML 4.0", "Panel de Analíticas Fiscales"]
-      },
+      "tags": [
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "AWS",
+        "Redis"
+      ],
+      "link": "https://hazfactura.com",
       "priority": 1,
-      "featured": true
+      "accentColor": "#2563eb",
+      "technicalSpecs": {
+        "architecture": "Microservicios / Serverless",
+        "database": "PostgreSQL / Redis"
+      }
     },
     {
       "id": "macrolife",
-      "title": "MacroLife",
-      "subtitle": "App de Escaneo de Calorías con IA",
-      "description": "App móvil que utiliza visión artificial para el rastreo nutricional. Fuerte enfoque en optimización de latencia de red y UX móvil.",
-      "link": "https://app.macrolife.app/",
+      "title": "Macrolife",
+      "subtitle": "App Health & Fitness con IA",
+      "description": "Aplicación móvil multiplataforma que utiliza visión artificial para el conteo de macros. Alcanzó 7,000+ descargas en tiendas oficiales, integrando pasarelas de pago y sincronización en tiempo real.",
       "images": [
         "/projects/macrolife_1.png",
-        "/projects/macrolife_2.png",
-        "/projects/macrolife_3.png",
-        "/projects/macrolife_4.png"
+        "/projects/macrolife_2.png"
       ],
-      "accentColor": "#000000",
-      "tags": ["Flutter", "Dart", "AI/CV", "Firebase", "Mobile"],
-      "technicalSpecs": {
-        "architecture": "Patrón BloC (Flutter)",
-        "database": "Firebase Firestore",
-        "features": ["Escaneo en tiempo real", "Integración HealthKit", "Almacenamiento Offline"]
-      },
+      "tags": [
+        "Flutter",
+        "Firebase",
+        "Computer Vision",
+        "Stripe"
+      ],
+      "link": "https://macrolife.com.mx",
       "priority": 2,
-      "featured": true
+      "accentColor": "#10b981",
+      "technicalSpecs": {
+        "architecture": "Event-Driven Architecture",
+        "database": "Cloud Firestore"
+      }
     },
     {
-      "id": "iusform",
-      "title": "IusForm",
-      "subtitle": "Gestión de Casos Legales",
-      "description": "Sistema integral para la automatización de bufetes jurídicos. Digitalización de expedientes y seguimiento automatizado de audiencias.",
-      "link": "https://iusform.com",
+      "id": "elearning-platform",
+      "title": "Plataforma E-learning",
+      "subtitle": "Sistema de Gestión de Aprendizaje",
+      "description": "Desarrollo integral de una plataforma educativa con gestión de contenido multimedia, exámenes dinámicos y seguimiento de progreso de usuarios en tiempo real.",
       "images": [
-        "/projects/iusform_1.png",
-        "/projects/iusform_2.png",
-        "/projects/iusform_3.png",
-        "/projects/iusform_4.png"
+        "/projects/iusform_1.png"
       ],
-      "accentColor": "#D4AF37",
-      "tags": ["React.js", "Node.js", "MongoDB", "Shadcn/UI"],
-      "technicalSpecs": {
-        "architecture": "MERN Stack",
-        "database": "MongoDB (GridFS para docs)",
-        "features": ["Gestión de Expedientes", "Calendario de Audiencias", "Control de Roles"]
-      },
+      "tags": [
+        "React",
+        "Express",
+        "MongoDB",
+        "AWS S3"
+      ],
+      "link": "#",
       "priority": 3,
-      "featured": true
-    },
-    {
-      "id": "dentista-sistema",
-      "title": "Santa Apolonia",
-      "subtitle": "Gestión de Clínica Dental",
-      "description": "Sistema de gestión clínica con enfoque en la experiencia del paciente. Visualización 3D de piezas dentales y gestión de cobros.",
-      "link": "https://dentista-sistema.vercel.app/",
-      "images": [
-        "/projects/dentista_1.png",
-        "/projects/dentista_2.png",
-        "/projects/dentista_3.png",
-        "/projects/dentista_4.png"
-      ],
-      "accentColor": "#7C3AED",
-      "tags": ["Next.js", "Tailwind CSS", "MongoDB", "Framer Motion"],
+      "accentColor": "#6366f1",
       "technicalSpecs": {
-        "architecture": "Server Actions (Next.js 14+)",
-        "database": "MongoDB Atlas",
-        "features": ["Odontograma Interactivo", "Agenda Médica", "Facturación de Consultas"]
-      },
-      "priority": 4,
-      "featured": true
+        "architecture": "MVC Architecture",
+        "database": "MongoDB / AWS S3"
+      }
     }
   ],
   "experience": [
     {
-      "role": "Desarrollador Full Stack Independiente",
       "company": "Freelance",
-      "period": "Enero 2025 - Presente",
+      "role": "Senior Full Stack Developer",
+      "period": "Enero 2026 - Presente",
+      "isCurrent": true,
       "responsibilities": [
-        "Desarrollo y mantenimiento de plataformas SaaS como Haz Factura e IusForm.",
-        "Liderar la arquitectura técnica de soluciones móviles AI para salud (MacroLife).",
-        "Optimización de procesos de bases de datos NoSQL y SQL para clientes privados.",
-        "Consultoría en transformación digital para clínicas especializadas."
-      ],
-      "isCurrent": true
-    },
-    {
-      "role": "Programador Full Stack",
-      "company": "Posibilidades Software Progresivo",
-      "period": "2022 - 2024",
-      "responsibilities": [
-        "Diseñar, desarrollar y mantener aplicaciones móviles y web corporativas.",
-        "Modelar y administrar bases de datos MySQL, asegurando integridad.",
-        "Implementar soluciones en la nube con AWS S3 y Firebase.",
-        "Publicar y mantener aplicaciones en App Store y Google Play."
+        "Liderazgo técnico en el desarrollo de Haz Factura, optimizando la arquitectura para soportar carga masiva.",
+        "Implementación de arquitecturas cloud en AWS para mejorar la escalabilidad y disponibilidad del sistema.",
+        "Consultoría en optimización de rendimiento y seguridad para startups tecnológicas."
       ]
     },
     {
-      "role": "Programador Full Stack",
       "company": "Lerco",
-      "period": "2024 - 2025",
+      "role": "Full Stack Developer",
+      "period": "Enero 2025 - Presente",
+      "isCurrent": true,
       "responsibilities": [
-        "Diseño y desarrollo de plataforma de cursos en línea.",
-        "Soporte técnico y mantenimiento de sistemas existentes."
+        "Desarrollo de plataforma e-learning alcanzando 500+ usuarios activos.",
+        "Integración de servicios de almacenamiento en la nube y procesamiento de video.",
+        "Optimización de consultas en base de datos PostgreSQL."
+      ]
+    },
+    {
+      "company": "MacroLife",
+      "role": "Mobile Developer Lead",
+      "period": "Junio 2022 - Diciembre 2024",
+      "isCurrent": false,
+      "responsibilities": [
+        "Lideré el desarrollo de la app móvil con 7K+ descargas.",
+        "Implementé modelos de Computer Vision para reconocimiento de alimentos.",
+        "Arquitectura de sincronización offline-first con Firebase."
       ]
     }
   ],
   "education": [
     {
-      "institution": "Universidad Tecnológica de Puebla",
-      "degree": "Ingeniería en Desarrollo y Gestión de Software",
-      "period": "2019 - 2023"
+      "institution": "Instituto Tecnológico de Puebla",
+      "degree": "Ingeniería en Tecnologías de la Información",
+      "period": "2020 - 2024"
     },
     {
-      "institution": "Universidad Tecnológica de Puebla",
-      "degree": "T.S.U. en TI (Desarrollo Multiplataforma)",
-      "period": "2019 - 2021"
+      "institution": "Platzi / Udemy",
+      "degree": "Especialización en Arquitectura de Software & Cloud",
+      "period": "2022 - 2025"
     }
   ],
-  "techStack": [
-    { 
-      "name": "Desarrollo Móvil", 
-      "items": ["Android (Android Studio, Play Console)", "iOS (Xcode, App Store Connect)", "Flutter (Dart)"] 
-    },
-    { 
-      "name": "Frontend", 
-      "items": ["React.js + Next.js", "Vue.js", "Tailwind CSS + shadcn/ui", "Bootstrap 5", "MUI (Material-UI)", "Vuetify (Vue)"] 
-    },
-    { 
-      "name": "Backend", 
-      "items": ["JavaScript (Node.js)", "C# (.NET Core)", "PHP (Laravel, CodeIgniter)", "Python", "RESTful, GraphQL, WebSockets"] 
-    },
-    { 
-      "name": "Bases de Datos", 
-      "items": ["MySQL, PostgreSQL, SQL Server", "MongoDB, Firebase", "Entity Framework, Mongoose"] 
-    },
-    { 
-      "name": "Cloud & DevOps", 
-      "items": ["AWS (EC2, S3, Lambda, CloudFront)", "Firebase (Auth, Push, Firestore)", "Azure (App Services)", "GitHub Actions, Docker"] 
-    },
-    { 
-      "name": "Inteligencia Artificial", 
-      "items": ["OpenAI (GPT) API", "Google Gemini API"] 
-    }
-  ]
+  "techStack": {
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "Flutter",
+      "Tailwind CSS",
+      "TypeScript"
+    ],
+    "backend": [
+      "Node.js",
+      "Express",
+      "Python",
+      "NestJS",
+      "Go"
+    ],
+    "cloud_data": [
+      "AWS",
+      "Firebase",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Docker"
+    ]
+  }
 }

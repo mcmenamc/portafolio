@@ -7,35 +7,39 @@ export default function BentoGrid({ projects }: { projects: any[] }) {
   const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority);
 
   return (
-    <section id="work" className="py-24 bg-zinc-950">
+    <section id="work" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 text-white">
-          <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-500 text-[10px] font-mono tracking-widest uppercase">
-              Proyectos Seleccionados
+        <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
+          <div className="space-y-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] tracking-widest uppercase">
+              Proyectos de Alto Impacto
             </div>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tight text-zinc-100">
-              Ingeniería Destacada
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-zinc-900 leading-none">
+              Ingeniería <span className="text-zinc-200">&</span><br/>Arquitectura
             </h2>
-            <p className="text-zinc-500 max-w-lg text-lg">
-              Soluciones tecnológicas construidas con precisión, enfocadas en escalabilidad y performance técnica.
+            <p className="text-zinc-500 max-w-lg text-sm font-medium leading-relaxed">
+              Desarrollo de soluciones tecnológicas robustas, desde motores de facturación masiva hasta aplicaciones móviles con visión artificial.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
           {sortedProjects.map((project, index) => {
             const isMain = project.id === 'haz-factura';
-            const isSecondary = project.id === 'macrolife';
+            const isMedium = project.id === 'elearning-platform';
 
             return (
               <motion.div
                 key={project.id}
-                initial={{ opacity: 0, y: 15 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.7, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className={`${isMain ? 'lg:col-span-2' : ''} ${isSecondary ? 'md:col-span-1' : ''}`}
+                className={`
+                  ${isMain ? 'lg:col-span-4' : ''} 
+                  ${isMedium ? 'lg:col-span-3' : ''}
+                  ${!isMain && !isMedium ? 'lg:col-span-2' : ''}
+                `}
               >
                 <ProjectCard project={project} />
               </motion.div>
@@ -46,3 +50,4 @@ export default function BentoGrid({ projects }: { projects: any[] }) {
     </section>
   )
 }
+

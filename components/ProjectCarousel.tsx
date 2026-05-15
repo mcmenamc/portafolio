@@ -26,7 +26,7 @@ export default function ProjectCarousel({ images, title }: { images: string[], t
 
   return (
     <div className="relative group/carousel">
-      <div className="overflow-hidden rounded-3xl bg-zinc-950 border border-zinc-800" ref={emblaRef}>
+      <div className="overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100" ref={emblaRef}>
         <div className="flex">
           {images.map((src, index) => (
             <div className="relative flex-[0_0_100%] min-w-0 aspect-video overflow-hidden" key={index}>
@@ -34,7 +34,7 @@ export default function ProjectCarousel({ images, title }: { images: string[], t
                 src={src}
                 alt={`${title} snapshot ${index + 1}`}
                 fill
-                className="object-cover opacity-80 group-hover/carousel:opacity-100 transition-opacity duration-500"
+                className="object-cover transition-all duration-500"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
