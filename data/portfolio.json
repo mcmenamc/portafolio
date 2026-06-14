@@ -34,7 +34,7 @@
       "id": "haz-factura",
       "title": "Haz Factura",
       "subtitle": "Software de Facturación Masiva",
-      "description": "Plataforma SaaS para emisión de CFDI 4.0. Integra conexión directa con el SAT para descargas masivas y sincronización con PAC autorizado. Sistema de procesamiento optimizado de alta disponibilidad.",
+      "description": "Producto propio de facturación masiva para emisión CFDI 4.0, descarga de XML, sincronización con PAC autorizado y operación cloud. Actualmente atiende a más de 10 clientes que facturan y administran procesos reales desde la plataforma.",
       "images": [
         "/projects/hazfactura_new_1.png",
         "/projects/hazfactura_new_2.png",
@@ -63,13 +63,29 @@
       "technicalSpecs": {
         "architecture": "Serverless & Microservices",
         "database": "MongoDB / AWS S3"
-      }
+      },
+      "ownership": "Producto propio",
+      "impact": "SaaS operando con clientes reales para facturación CFDI 4.0, descarga masiva y flujos administrativos.",
+      "metrics": [
+        {
+          "label": "Clientes activos",
+          "value": "10+"
+        },
+        {
+          "label": "CFDI / mes",
+          "value": "Miles+"
+        },
+        {
+          "label": "Rol",
+          "value": "Founder & Full Stack"
+        }
+      ]
     },
     {
       "id": "macrolife",
       "title": "Macrolife",
       "subtitle": "App Health & Fitness con IA",
-      "description": "Aplicación móvil iOS y Android diseñada para analizar los macronutrientes de los alimentos mediante visión artificial y fomentar un estilo de vida saludable. Incluye sistema de pagos recurrentes.",
+      "description": "Aplicación iOS/Android de health & fitness en la que participé como desarrollador, integrando análisis de macronutrientes con visión artificial, experiencia móvil fluida y pagos recurrentes.",
       "images": [
         "/projects/macrolife_1.png",
         "/projects/macrolife_2.png"
@@ -88,13 +104,29 @@
       "technicalSpecs": {
         "architecture": "Clean Architecture (BLoC)",
         "database": "AWS S3 / Cloud"
-      }
+      },
+      "ownership": "Proyecto desarrollado como empleado",
+      "impact": "App móvil de salud con experiencia de usuario, pagos y análisis de alimentos con visión artificial.",
+      "metrics": [
+        {
+          "label": "Descargas",
+          "value": "7K+"
+        },
+        {
+          "label": "Plataformas",
+          "value": "iOS/Android"
+        },
+        {
+          "label": "Rol",
+          "value": "Mobile & API"
+        }
+      ]
     },
     {
       "id": "iusform",
       "title": "Iusform",
       "subtitle": "Sistema de Administración Legal",
-      "description": "Plataforma administrativa integral para despachos y abogados independientes. Permite la gestión centralizada de expedientes, automatización de documentos y control de clientes en la nube.",
+      "description": "Plataforma administrativa legal construida para despachos y abogados. Participé en módulos para expedientes, clientes, documentos y operación interna con enfoque en orden y trazabilidad.",
       "images": [
         "/projects/iusform_1.png"
       ],
@@ -111,13 +143,29 @@
       "technicalSpecs": {
         "architecture": "MVC Architecture",
         "database": "MySQL / AWS S3"
-      }
+      },
+      "ownership": "Proyecto desarrollado como empleado",
+      "impact": "Sistema legal para centralizar expedientes, clientes, documentos y operación diaria en despachos.",
+      "metrics": [
+        {
+          "label": "Sector",
+          "value": "LegalTech"
+        },
+        {
+          "label": "Módulos",
+          "value": "Admin+"
+        },
+        {
+          "label": "Rol",
+          "value": "Web backend"
+        }
+      ]
     },
     {
       "id": "hank",
       "title": "Hank",
       "subtitle": "App de Control Residencial",
-      "description": "Aplicación móvil para administración residencial. Permite control de acceso a fraccionamientos mediante códigos QR, gestión de cobros y cuotas, además del envío y rastreo de invitaciones a visitas.",
+      "description": "Aplicación móvil para administración residencial en la que participé construyendo flujos de acceso por QR, invitaciones, cobros y comunicación entre residentes y administración.",
       "images": [
         "/projects/hank_1.png",
         "/projects/hank_2.png",
@@ -137,7 +185,23 @@
       "technicalSpecs": {
         "architecture": "Mobile & REST API",
         "database": "MySQL"
-      }
+      },
+      "ownership": "Proyecto desarrollado como empleado",
+      "impact": "App residencial para accesos QR, cuotas, invitaciones y administración de fraccionamientos.",
+      "metrics": [
+        {
+          "label": "Producto",
+          "value": "Residencial"
+        },
+        {
+          "label": "Acceso",
+          "value": "QR"
+        },
+        {
+          "label": "Rol",
+          "value": "Mobile/API"
+        }
+      ]
     }
   ],
   "experience": [

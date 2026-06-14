@@ -31,17 +31,17 @@ export default function GitHubActivity({ username }: { username: string }) {
   }, [username])
 
   return (
-    <section className="py-24 bg-zinc-50 border-y border-zinc-100">
+    <section className="py-24 bg-white border-y border-slate-200">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
           <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-[10px] tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-50 border border-cyan-100 text-cyan-700 text-[10px] tracking-widest uppercase">
               Actividad Reciente
             </div>
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-zinc-900 leading-none">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-slate-950 leading-none">
               Código Open Source
             </h2>
-            <p className="text-zinc-500 max-w-lg text-sm font-medium leading-relaxed">
+            <p className="text-slate-600 max-w-lg text-sm font-medium leading-relaxed">
               Mis repositorios más activos, priorizando aquellos con desarrollo constante y despliegue continuo.
             </p>
           </div>
@@ -49,7 +49,7 @@ export default function GitHubActivity({ username }: { username: string }) {
           <a 
             href={`https://github.com/${username}`} 
             target="_blank" 
-            className="flex items-center gap-3 px-6 py-3 rounded-xl bg-zinc-900 text-white text-xs font-black uppercase tracking-widest hover:bg-zinc-800 transition-all shadow-xl shadow-zinc-200"
+            className="flex items-center gap-3 px-6 py-3 rounded-xl bg-slate-950 text-white text-xs font-black uppercase tracking-widest hover:bg-cyan-700 transition-all shadow-xl shadow-slate-900/10"
           >
             <Github size={18} />
             Perfil de GitHub
@@ -59,7 +59,7 @@ export default function GitHubActivity({ username }: { username: string }) {
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
-              <div key={i} className="h-40 rounded-3xl bg-zinc-100 animate-pulse" />
+              <div key={i} className="h-40 rounded-3xl bg-slate-100 animate-pulse" />
             ))}
           </div>
         ) : (
@@ -73,33 +73,33 @@ export default function GitHubActivity({ username }: { username: string }) {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group p-6 rounded-3xl bg-white border border-zinc-100 hover:border-blue-200 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500 flex flex-col justify-between min-h-[200px]"
+                className="group p-6 rounded-3xl bg-white border border-slate-200 hover:border-cyan-200 hover:shadow-2xl hover:shadow-slate-200/70 transition-all duration-500 flex flex-col justify-between min-h-[200px]"
               >
                 <div className="space-y-3">
                   <div className="flex justify-between items-start">
-                    <div className="p-2.5 rounded-xl bg-zinc-50 text-zinc-400 group-hover:bg-blue-50 group-hover:text-blue-600 transition-colors">
+                    <div className="p-2.5 rounded-xl bg-slate-50 text-slate-400 group-hover:bg-cyan-50 group-hover:text-cyan-700 transition-colors">
                       <GitCommit size={20} />
                     </div>
-                    <div className="flex items-center gap-1.5 text-zinc-400 font-bold text-xs">
+                    <div className="flex items-center gap-1.5 text-slate-400 font-bold text-xs">
                       <Star size={12} className="fill-current" />
                       {repo.stargazers_count}
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-black text-zinc-900 group-hover:text-blue-600 transition-colors truncate">
+                    <h3 className="text-lg font-black text-slate-950 group-hover:text-cyan-700 transition-colors truncate">
                       {repo.name}
                     </h3>
-                    <p className="text-zinc-500 text-xs line-clamp-2 mt-2 font-medium leading-relaxed">
+                    <p className="text-slate-600 text-xs line-clamp-2 mt-2 font-medium leading-relaxed">
                       {repo.description || "Proyecto de ingeniería desarrollado con estándares de calidad."}
                     </p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 mt-6 pt-5 border-t border-zinc-50">
-                  <span className="text-[9px] font-black uppercase tracking-widest text-zinc-400 px-3 py-1 rounded-lg bg-zinc-50">
+                <div className="flex items-center gap-4 mt-6 pt-5 border-t border-slate-100">
+                  <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 px-3 py-1 rounded-lg bg-slate-50">
                     {repo.language || "TypeScript"}
                   </span>
-                  <div className="ml-auto text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity font-black text-[9px] uppercase tracking-widest">
+                  <div className="ml-auto text-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity font-black text-[9px] uppercase tracking-widest">
                     Explorar →
                   </div>
                 </div>

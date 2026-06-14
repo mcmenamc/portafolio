@@ -4,49 +4,46 @@ import { motion } from "framer-motion"
 import ProjectCard from "../ProjectCard"
 
 export default function BentoGrid({ projects }: { projects: any[] }) {
-  const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority);
+  const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority)
 
   return (
-    <section id="proyectos" className="py-32 bg-[#f4f7fb]">
-      <div className="container mx-auto px-4 max-w-7xl">
-        {/* Header Section */}
-        <div className="max-w-3xl mb-24">
+    <section id="proyectos" className="bg-[#f7f3eb] py-28">
+      <div className="container mx-auto max-w-7xl px-4">
+        <div className="mb-16 grid grid-cols-1 gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-5"
           >
             <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-700">
-              Laboratorio de producto
+              Casos seleccionados
             </span>
-            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-slate-950 leading-[0.95]">
-              Casos con <span className="text-cyan-600">firma</span><br />propia
+            <h2 className="text-5xl font-black leading-[0.9] tracking-[-0.07em] text-slate-950 md:text-7xl">
+              Trabajo real, contexto claro.
             </h2>
-            <p className="text-slate-600 text-lg font-medium leading-relaxed max-w-xl">
-              Soluciones escalables diseñadas con precisión técnica y enfoque en el impacto de negocio.
-            </p>
           </motion.div>
+          <p className="max-w-2xl text-base font-medium leading-8 text-slate-600 md:text-lg">
+            Separé mi producto propio de los proyectos donde participé como empleado para contar mejor el impacto, el rol y las decisiones técnicas detrás de cada caso.
+          </p>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-24">
+        <div className="space-y-8">
           {sortedProjects.map((project, index) => {
-            const isFeatured = project.id === 'haz-factura';
-            
+            const isFeatured = project.id === "haz-factura"
+
             return (
               <motion.div
                 key={project.id}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0, y: 34 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
+                transition={{ duration: 0.75, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 viewport={{ once: true }}
-                className={isFeatured ? "md:col-span-2" : ""}
               >
                 <ProjectCard project={project} isFeatured={isFeatured} />
               </motion.div>
-            );
+            )
           })}
         </div>
       </div>
