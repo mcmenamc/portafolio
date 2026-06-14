@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-inter: "Inter", "Aptos", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", ui-monospace, monospace;
+}
+
 body {
-  @apply bg-background text-foreground;
+  @apply bg-background text-foreground font-sans;
 }
 
 @layer utilities {

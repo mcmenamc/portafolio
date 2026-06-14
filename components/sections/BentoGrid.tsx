@@ -7,7 +7,7 @@ export default function BentoGrid({ projects }: { projects: any[] }) {
   const sortedProjects = [...projects].sort((a, b) => a.priority - b.priority);
 
   return (
-    <section id="proyectos" className="py-32 bg-white">
+    <section id="proyectos" className="py-32 bg-[#f4f7fb]">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header Section */}
         <div className="max-w-3xl mb-24">
@@ -18,13 +18,13 @@ export default function BentoGrid({ projects }: { projects: any[] }) {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-blue-600">
-              Portfolio de Ingeniería
+            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-cyan-700">
+              Laboratorio de producto
             </span>
-            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-zinc-900 leading-[0.95]">
-              Sistemas <span className="text-zinc-200">&</span><br />Productos
+            <h2 className="text-5xl md:text-7xl font-black tracking-tight text-slate-950 leading-[0.95]">
+              Casos con <span className="text-cyan-600">firma</span><br />propia
             </h2>
-            <p className="text-zinc-500 text-lg font-medium leading-relaxed max-w-xl">
+            <p className="text-slate-600 text-lg font-medium leading-relaxed max-w-xl">
               Soluciones escalables diseñadas con precisión técnica y enfoque en el impacto de negocio.
             </p>
           </motion.div>
